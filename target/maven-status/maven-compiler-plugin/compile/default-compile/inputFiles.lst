@@ -1,0 +1,14 @@
+/home/markus/Dokumente/HTL/5DHIF/POS/web/web_EmployeeList_js_17.12./src/main/java/com/mycompany/web_employeelist/IPerson.java
+/home/markus/Dokumente/HTL/5DHIF/POS/web/web_EmployeeList_js_17.12./src/main/java/com/mycompany/web_employeelist/server/ServerProxyFactory.java
+/home/markus/Dokumente/HTL/5DHIF/POS/web/web_EmployeeList_js_17.12./src/main/java/com/mycompany/web_employeelist/pojo/Meeting.java
+/home/markus/Dokumente/HTL/5DHIF/POS/web/web_EmployeeList_js_17.12./src/main/java/com/mycompany/web_employeelist/controllers/EmployeeController.java
+/home/markus/Dokumente/HTL/5DHIF/POS/web/web_EmployeeList_js_17.12./src/main/java/com/mycompany/web_employeelist/server/DBServerProxy.java
+/home/markus/Dokumente/HTL/5DHIF/POS/web/web_EmployeeList_js_17.12./src/main/java/com/mycompany/web_employeelist/controllers/RetrieveMeetingsForEmployee.java
+/home/markus/Dokumente/HTL/5DHIF/POS/web/web_EmployeeList_js_17.12./src/main/java/com/mycompany/web_employeelist/controllers/AddMeeting.java
+/home/markus/Dokumente/HTL/5DHIF/POS/web/web_EmployeeList_js_17.12./src/main/java/com/mycompany/web_employeelist/Person.java
+/home/markus/Dokumente/HTL/5DHIF/POS/web/web_EmployeeList_js_17.12./src/main/java/com/mycompany/web_employeelist/data/Employee.java
+/home/markus/Dokumente/HTL/5DHIF/POS/web/web_EmployeeList_js_17.12./src/main/java/com/mycompany/web_employeelist/server/MockServerProxy.java
+/home/markus/Dokumente/HTL/5DHIF/POS/web/web_EmployeeList_js_17.12./src/main/java/com/mycompany/web_employeelist/data/Meeting.java
+/home/markus/Dokumente/HTL/5DHIF/POS/web/web_EmployeeList_js_17.12./src/main/java/com/mycompany/web_employeelist/controllers/RetrieveParticipantsForMeeting.java
+/home/markus/Dokumente/HTL/5DHIF/POS/web/web_EmployeeList_js_17.12./src/main/java/com/mycompany/web_employeelist/pojo/Employee.java
+/home/markus/Dokumente/HTL/5DHIF/POS/web/web_EmployeeList_js_17.12./src/main/java/com/mycompany/web_employeelist/server/IServerProxy.java
