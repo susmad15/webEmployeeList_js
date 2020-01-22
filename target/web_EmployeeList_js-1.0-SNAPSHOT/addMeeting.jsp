@@ -1,9 +1,3 @@
-<%-- 
-    Document   : addMeeting
-    Created on : 03.12.2019, 14:29:41
-    Author     : Basti
---%>
-
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
