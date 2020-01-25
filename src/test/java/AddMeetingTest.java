@@ -34,13 +34,14 @@ public class AddMeetingTest {
     }
 
    
-   // @Test
+    @Test
     public void testAddMeeting() {
         IServerProxy db = ServerProxyFactory.getInstance();
         List<Meeting> meetingsBeforeAdd = db.getMeetings();
-        db.addMeeting(null);
+        long employeeId = 1;
+        db.addMeeting(employeeId);
         
         List<Meeting> meetingsAfterAdd = db.getMeetings();
-        assertEquals(meetingsAfterAdd.size()- meetingsBeforeAdd.size(), 1);
+        assertTrue(meetingsAfterAdd.size() > meetingsBeforeAdd.size());
     }
 }

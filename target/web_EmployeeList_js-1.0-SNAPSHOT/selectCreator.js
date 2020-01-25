@@ -8,32 +8,34 @@ class selectCreator {
         this.data = data;
     }
 
-    create = (nothing) => {
+    create = () => {
         this.fetchData(this.selectObject);
     }
 
-    fetchData = (selectObject) => {
+    fetchData = (selectObject) => 
+    {
         fetch(this.url,
                 {
                     method: 'post',
-                    headers: {
-                        'Accept': 'application/json',
-                        'Content-Type': 'application/json'
-                    },
-                    body: this.data
-                })
-                .then(
-                        (response) => {
+                    headers: 
+                            {
+                                'Accept': 'application/json',
+                                'Content-Type': 'application/json'
+                            },
+                                body: this.data
+                }).then((response) => 
+                {
                     response.json()
-                            .then(
-                                    data => {
-
-                                        this.setupSelect(data);
-                                    })
+                    .then(data => 
+                    {
+                        this.setupSelect(data);
+                    })
                 });
-    }
-    ;
-            setupSelect = (json) => {
+    };
+    
+            
+    setupSelect = (json) => 
+    {
 
         let jsonString = JSON.stringify(json);
         console.log(jsonString);
