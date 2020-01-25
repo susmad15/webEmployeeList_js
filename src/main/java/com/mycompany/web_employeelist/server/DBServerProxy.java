@@ -66,10 +66,9 @@ public class DBServerProxy implements IServerProxy {
         List meetings = getMeetings();
         List employees = getEmployees();
 
-        List<Employee> result = (List) employees.stream().filter(e ->((Employee) e).getId() == employeeId).collect(Collectors.toList());
+        List<Employee> result = (List) employees.stream().filter(e -> ((Employee) e).getId() == employeeId).collect(Collectors.toList());
         Employee creator = result.get(0);
-        
-        
+
         Employee participant1 = (Employee) employees.get(employees.size() - 4);
         Employee participant2 = (Employee) employees.get(employees.size() - 5);
 
@@ -97,20 +96,27 @@ public class DBServerProxy implements IServerProxy {
         em.getTransaction().commit();
 
     }
-    
+
     @Override
     public Long getEmployeeID(String name) {
-        List employees = getEmployees();
+        List<Employee> employees = getEmployees();
+        long id = -1;
 
-        List<Employee> result = (List) employees
+        /*List<Employee> result = (List) employees
                 .stream()
-                .filter(e -> ((Employee) e).getName().equals(name)).collect(Collectors.toList());
+                .filter(e -> ((Employee) e).getName().equals(name)).collect(Collectors.toList());*/
         
-        long id = result.get(0).getId();
+        for(Employee e : employees)
+        {
+            if(e.getName().equals(name))
+            {
+                id = e.getId();
+            }
+        }
+
 
         return id;
     }
-
 
     @Override
     public List<Employee> getParticipantsForMeeting(int id) {
@@ -122,5 +128,7 @@ public class DBServerProxy implements IServerProxy {
         return meeting.getParticipants();
 
     }
+    
+    
 
 }
